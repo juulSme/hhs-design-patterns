@@ -1,6 +1,6 @@
 package application;
 
-import email.JavaxMailSender;
+import email.JavaxMailSenderThatYouCannotChange;
 import stringOps.StringOperator;
 
 import javax.mail.MessagingException;
@@ -13,7 +13,7 @@ public class Application {
     public static void main(String[] args){
         // Assignment 1.
         // Refactor the stringOps package so that this code will work. You will need
-        // to use two design patterns.
+        // to use two design patterns
         String input = "Wat een fantastische code";
         System.out.println("Select the operation to apply to the hardcoded String.");
         System.out.println("<1> for more spaces, <2> for the first half, <3> for its length");
@@ -27,10 +27,13 @@ public class Application {
             case 3: operator = new LengthCreator(); break;
             default: throw new IllegalArgumentException("It's not that difficult. Try again!");
         }
+        System.out.println(operator.Operate(input));
 
         // Assignment 2.
-        // Refactor the emailSender so that this method is usable
-        JavaxMailSender emailSender = new JavaxMailSender();
+        // Apply a design pattern so that sending an email from this application
+        // becomes easier and you don't need all of these parameters.
+        // You cannot change the existing MailSender.
+        JavaxMailSenderThatYouCannotChange emailSender = new JavaxMailSenderThatYouCannotChange();
         try{
             emailSender.sendEmail(
                     "emailadres ontvanger",

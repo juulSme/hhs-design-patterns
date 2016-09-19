@@ -8,8 +8,8 @@ import java.util.Properties;
 /**
  * Created by Julien Smeets (jsmeets@quintor.nl) on 19-9-16.
  */
-public class JavaxMailSender {
-    public void sendEmail(String address, String subject, String body, String user, String pass, String smtp_auth, String smtp_starttls, String smtp_host, String smtp_port) throws MessagingException {
+public class JavaxMailSenderThatYouCannotChange {
+    public final void sendEmail(String address, String subject, String body, String user, String pass, String smtp_auth, String smtp_starttls, String smtp_host, String smtp_port) throws MessagingException {
         final String username = user;
         final String password = pass;
 

@@ -32,7 +32,7 @@ public class Application {
         // Assignment 2.
         // Apply a design pattern so that sending an email from this application
         // becomes easier and you don't need all of these parameters.
-        // You cannot change the existing MailSender.
+        // You cannot change the existing JavaxMailSender.
         JavaxMailSenderThatYouCannotChange emailSender = new JavaxMailSenderThatYouCannotChange();
         try{
             emailSender.sendEmail(

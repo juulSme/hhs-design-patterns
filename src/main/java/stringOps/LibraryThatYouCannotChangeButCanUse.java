@@ -4,7 +4,7 @@ package stringOps;
  * Created by Julien Smeets (jsmeets@quintor.nl) on 19-9-16.
  */
 class LibraryThatYouCannotChangeButCanUse {
-    private LibraryThatYouCannotChangeButCanUse(){};
+    private LibraryThatYouCannotChangeButCanUse(){}
 
     protected static String injectSpaces(String input){
         String answer = "";
